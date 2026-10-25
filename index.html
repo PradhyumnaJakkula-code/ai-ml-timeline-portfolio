@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI & ML Timeline | Sai Kumar Reddy Charagonda</title>
+
+<style>
+:root {
+  --navy: #101b35;
+  --blue: #4f46e5;
+  --bg: #f4f7fc;
+  --text: #202b42;
+  --muted: #637089;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+header {
+  padding: 60px 22px;
+  color: white;
+  background: linear-gradient(120deg, #101b35, #3730a3, #087e9b);
+}
+
+.wrap {
+  max-width: 1000px;
+  width: 92%;
+  margin: auto;
+}
+
+.eyebrow {
+  display: inline-block;
+  border: 1px solid #ffffff66;
+  border-radius: 30px;
+  padding: 5px 13px;
+  font-size: 13px;
+}
+
+h1 {
+  font-size: clamp(32px, 5vw, 54px);
+  line-height: 1.15;
+  margin: 20px 0 12px;
+}
+
+header p { color: #e0e7ff; }
+
+main { padding: 30px 0 55px; }
+
+.welcome, details {
+  background: white;
+  border: 1px solid #dfe6f1;
+  border-radius: 15px;
+  margin-bottom: 14px;
+}
+
+.welcome {
+  padding: 24px;
+  box-shadow: 0 8px 25px #1725540c;
+}
+
+h2 { margin-top: 0; }
+
+button {
+  padding: 10px 14px;
+  margin: 5px 5px 0 0;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.primary { background: var(--blue); color: white; }
+.secondary { background: #e9edf7; color: #24314c; }
+
+details { overflow: hidden; }
+
+details[open] { border-color: #a5b4fc; }
+
+summary {
+  padding: 18px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 17px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "＋"; color: var(--blue); }
+details[open] summary::after { content: "−"; }
+
+.content {
+  padding: 0 24px 24px;
+  color: #46536b;
+}
+
+.content li { margin: 7px 0; }
+.content h3 { color: var(--navy); margin-bottom: 4px; }
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: var(--muted);
+}
+
+@media (max-width: 500px) {
+  header { padding: 42px 0; }
+  summary { padding: 16px; }
+  .content { padding: 0 18px 20px; }
+}
+
+@media print {
+  details:not([open]) .content { display: block; }
+  button { display: none; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="eyebrow">ACADEMIC PORTFOLIO · ARTIFACT 01</span>
+    <h1>AI and ML Timelines</h1>
+    <p>Tracing the Evolution of Artificial Intelligence and Machine Learning Technologies</p>
+    <p><strong>Sai Kumar Reddy Charagonda</strong></p>
+    <p>Java Development → AI and Data Analytics</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="welcome">
+    <h2>Welcome to My Portfolio</h2>
+    <p>
+      This portfolio artifact presents the purpose, development process,
+      tools, and professional value of exploring the history and evolution
+      of artificial intelligence and machine learning.
+      Click each heading below to view its content.
+    </p>
+
+    <button class="primary" onclick="toggleAll(true)">
+      Expand All Sections
+    </button>
+
+    <button class="secondary" onclick="toggleAll(false)">
+      Collapse All Sections
+    </button>
+
+    <button class="secondary" onclick="window.print()">
+      Print / Save as PDF
+    </button>
+  </section>
+
+  <h2>Artifact Details</h2>
+
+  <details open>
+    <summary>1. Title</summary>
+    <div class="content">
+      <p>
+        <strong>
+          AI and ML Timelines: Tracing the Evolution of Artificial
+          Intelligence and Machine Learning Technologies
+        </strong>
+      </p>
+    </div>
+  </details>
+
+  <details>
+    <summary>2. Introduction</summary>
+    <div class="content">
+      <p>
+        As a Java developer transitioning into AI and Data Analytics,
+        understanding the historical evolution of AI and ML is essential
+        to my professional growth. This timeline artifact serves as both
+        a learning tool and a resource that demonstrates how foundational
+        concepts built the modern AI landscape I'm now entering.
+      </p>
+    </div>
+  </details>
+
+  <details>
+    <summary>3. Description</summary>
+    <div class="content">
+      <p>
+        An interactive visual timeline (created in Canva) that traces key
+        milestones in AI and ML development—from the Dartmouth Conference
+        (1956) through contemporary deep learning advances. The timeline
+        includes:
+      </p>
+      <ul>
+        <li>Pivotal moments in AI history (Turing Test, Expert Systems, Neural Networks, Deep Learning)</li>
+        <li>Key breakthroughs by decade</li>
+        <li>Influential researchers and their contributions</li>
+        <li>Transition points from symbolic AI to data-driven approaches</li>
+        <li>Current state and emerging trends (LLMs, Transformers, Federated Learning)</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>4. Objective</summary>
+    <div class="content">
+      <ul>
+        <li>To consolidate my foundational knowledge of how AI/ML evolved.</li>
+        <li>To create a visual reference guide I can use when discussing AI evolution with peers and potential employers.</li>
+        <li>To demonstrate my ability to synthesize complex historical information into an accessible format.</li>
+        <li>To show my appreciation for how traditional Java development is now intersecting with AI technologies.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>5. Process</summary>
+    <div class="content">
+      <ul>
+        <li>Researched major milestones in AI/ML history from course materials and credible sources.</li>
+        <li>Identified 15–20 key events spanning 1956 to 2026.</li>
+        <li>Organized chronologically and thematically (pure AI → ML → Deep Learning → Current Trends).</li>
+        <li>Used Canva's timeline template to design a clean, professional visualization.</li>
+        <li>Added brief descriptions, dates, and relevance for each milestone.</li>
+        <li>Color-coded by era/category for quick visual reference.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>6. Tools and Technologies Used</summary>
+    <div class="content">
+      <ul>
+        <li>Canva (primary design tool)</li>
+        <li>Course materials on ML fundamentals</li>
+        <li>Research from AI history sources</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>7. Value Proposition</summary>
+    <div class="content">
+
+      <h3>For Employers</h3>
+      <p>
+        My ability to contextualize modern AI within its historical
+        development—showing I'm not just learning tools, but understanding
+        the why behind current approaches.
+      </p>
+
+      <h3>For Peers/Collaborators</h3>
+      <p>
+        A shareable reference guide that makes AI history accessible
+        and prevents reinventing the wheel.
+      </p>
+
+      <h3>For Myself</h3>
+      <p>
+        An anchoring artifact that bridges my Java development background
+        with my new AI/ML focus, showing how the field has evolved to meet
+        modern computational challenges.
+      </p>
+
+    </div>
+  </details>
+
+  <details>
+    <summary>8. Unique Value</summary>
+    <div class="content">
+      <p>Unlike generic AI timelines found online, this artifact is:</p>
+
+      <ul>
+        <li>
+          <strong>Tailored to the IWU ML course curriculum:</strong>
+          emphasizing concepts I'm actively learning.
+        </li>
+        <li>
+          <strong>Designed as a professional resource:</strong>
+          not just a homework submission.
+        </li>
+        <li>
+          <strong>Positioned at the intersection of traditional software
+          development and modern AI:</strong>
+          reflecting my career transition.
+        </li>
+      </ul>
+    </div>
+  </details>
+
+</main>
+
+<footer>
+  <p>Academic Portfolio · Artifact 1: AI and ML Timelines</p>
+  <p>Created by <strong>Sai Kumar Reddy Charagonda</strong></p>
+</footer>
+
+<script>
+function toggleAll(open) {
+  document.querySelectorAll("main details").forEach(section => {
+    section.open = open;
+  });
+}
+</script>
+
+</body>
+</html>
